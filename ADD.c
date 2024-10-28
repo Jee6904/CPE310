@@ -19,8 +19,8 @@ void add_reg_assm(void) {
 		state=MISSING_REG;
 		return;
 	}
-	if (PARAM3.type!=IMMEDIATE){
-		state=INVALID_PARAM;
+	if (PARAM3.type!=REGISTER){
+		state=MISSING_REG;
 		return;
 	}
 
