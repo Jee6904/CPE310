@@ -19,8 +19,8 @@ void add_reg_assm(void) {
 		state=MISSING_REG;
 		return;
 	}
-	if (PARAM3.type!=REGISTER){
-		state=MISSING_REG;
+	if (PARAM3.type!=IMMEDIATE){
+		state=INVALID_PARAM;
 		return;
 	}
 
@@ -66,7 +66,7 @@ void add_reg_assm(void) {
 void add_reg_bin(void) {
 
 	//check the opcode and the function since it selected the operation in the opcode field
-	if (check_bits(31,"000000")!=0||check_bits(5,"100000")!=0){
+	if (checkBits(31,"000000")!=0||checkBits(5,"100000")!=0){
 		state = WRONG_COMMAND;
 		return;
 	}

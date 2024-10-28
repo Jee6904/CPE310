@@ -49,7 +49,7 @@ void andi_immd_assm(void) {
 	}
 
 	// The immediate value is limited to 16 bits, this is 0xFFFF
-	if (PARAM3.value > 0xFFFF) {
+	if (PARAM3.value > 0XFFFF) {
 		state = INVALID_IMMED;
 		return;
 	}
