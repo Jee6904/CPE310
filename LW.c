@@ -1,14 +1,14 @@
 #include "Instruction.h"
 /* Geoffrey McCloud
 Taylor Jones
-Geoffey McCloud wrote DIV.c*/
+Geoffey McCloud wrote LW.c*/
 void lw_immd_assm(void) {
 	if (strcmp(OP_CODE, "LW") != 0) {
 		state = WRONG_COMMAND;
 		return;
 	}
-	state = WRONG_COMMAND;
-    //check params rt, immm(rs)
+
+    //check params rd, immm(rs)
 
 	if (PARAM1.type!=REGISTER){
 		state=MISSING_REG;

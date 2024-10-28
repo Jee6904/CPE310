@@ -7,7 +7,7 @@ void add_reg_assm(void) {
 		state = WRONG_COMMAND;
 		return;
 	}
-	state = WRONG_COMMAND;
+	
 
 	//check params 
 
@@ -52,7 +52,7 @@ void add_reg_assm(void) {
 
 	//rt is the next 5 bits, in machine inst its second source register so it uses param 3
 	//since third register in ASM add inst represents second source register 
-	setBits_num(20,PARAM2.value,5);
+	setBits_num(20,PARAM3.value,5);
 
 	//rd is the next 5 bits, in machine its dest reg so we use param 1 since its the first register in the ASM inst
 	setBits_num(15,PARAM1.value,5);

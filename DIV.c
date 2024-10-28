@@ -7,8 +7,8 @@ void div_reg_assm(void) {
 		state = WRONG_COMMAND;
 		return;
 	}
-	state = WRONG_COMMAND;
-	
+
+
 	//check params div opcode rs rt (no rd or shamt, function=000000)
 
 	if (PARAM1.type!=REGISTER){
