@@ -69,7 +69,7 @@ void beq_immd_bin(void) {
 	//now we convert the register bits into numbers
 	uint32_t Rs= getBits(25,5);
 	uint32_t Rt = getBits(20, 5);
-	uint32_t Immm = getBits(15, 16);
+	uint32_t Imm = getBits(15, 16);
 
 	//form the ASM instruction
 	setOp("BEQ");
@@ -77,13 +77,13 @@ void beq_immd_bin(void) {
 	//Params: uint32_t param_num - which parameter to change
 			//Param_Type type - what type to set the parameter to
 			//uint32_t value - what value to set the parameter to
-	//beq rs, rt, immm
+	//beq rs, rt, imm
 	//first parameter is rd
 	setParam(1,REGISTER,Rs);
 	//second param is rs
 	setParam(2,REGISTER,Rt);
-	//third param in ADD is rt
-	setParam(3,IMMEDIATE,Rt);
+	//third param is is rt
+	setParam(3,IMMEDIATE,Imm);
 
 	state=COMPLETE_DECODE;
 }
