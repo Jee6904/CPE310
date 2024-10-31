@@ -59,8 +59,8 @@ void slt_reg_bin(void) {
 	uint32_t Rs = getBits(25, 5);
 
 	//set opcode
-	setOp("OR");
-	//OR rd,rs,rt
+	setOp("SLT");
+	//SLT rd,rs,rt
 	setParam(1,REGISTER,Rd);
 	setParam(2,REGISTER,Rs);
 	setParam(3,REGISTER,Rt);
