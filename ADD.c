@@ -1,6 +1,6 @@
 #include "Instruction.h"
 /* Geoffrey McCloud
-Taylor 
+Taylor Jones
 Geoffey McCloud wrote ADD.c*/
 void add_reg_assm(void) {
 	if (strcmp(OP_CODE, "ADD") != 0) {

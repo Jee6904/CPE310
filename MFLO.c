@@ -35,7 +35,7 @@ void mflo_reg_bin(void) {
 		return;
 	}
 	uint32_t Rd= getBits(15,5);
-	
+	setOp("MFLO");
 	setParam(1, REGISTER,Rd);
 	state=COMPLETE_DECODE;
 }

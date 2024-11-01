@@ -1,6 +1,6 @@
 #include "Instruction.h"
 /* Geoffrey McCloud
-Taylor 
+Taylor Jones
 Geoffey McCloud wrote BEQ.c*/
 void beq_immd_assm(void) {
 	if (strcmp(OP_CODE, "BEQ") != 0) {

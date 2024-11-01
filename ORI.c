@@ -73,7 +73,7 @@ void ori_immd_bin(void)
 	//Converting register bits into numbers
 	uint32_t Rs = getBits(25, 5);
 	uint32_t Rt = getBits(20, 5);
-	uint32_t Imm = getBits(15, 5);
+	uint32_t Imm = getBits(15,16);
 
 	//Set opcode
 	setOp("ORI");

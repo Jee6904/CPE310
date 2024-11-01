@@ -59,7 +59,7 @@ void sub_reg_bin(void) {
 	uint32_t Rs = getBits(25, 5);
 
 	//set opcode
-	setOp("OR");
+	setOp("SUB");
 	//SUB rd,rs,rt
 	setParam(1,REGISTER,Rd);
 	setParam(2,REGISTER,Rs);

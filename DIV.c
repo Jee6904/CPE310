@@ -53,7 +53,7 @@ void div_reg_assm(void) {
 
 void div_reg_bin(void) {
 	//check the opcode 
-	if (checkBits(31,"000000")!=0){
+	if (checkBits(31,"000000")!=0||checkBits(5,"011010")!=0){
 		state = WRONG_COMMAND;
 		return;
 	}
